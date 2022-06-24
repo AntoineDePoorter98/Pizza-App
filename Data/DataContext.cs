@@ -1,7 +1,11 @@
-﻿ using Microsoft.EntityFrameworkCore;
-using pizza_app.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using pizza_mama.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace pizza_app.Data
+namespace pizza_mama.Data
 {
     public class DataContext : DbContext
     {
@@ -10,4 +14,5 @@ namespace pizza_app.Data
         }
         public DbSet<Pizza> Pizzas { get; set; }
     }
+
 }
